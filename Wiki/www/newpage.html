@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <title>Wiki</title>
+</head>
+
+<body>
+  <a href="/wiki" class="main-title">
+    Wiki
+  </a>
+
+  <div class="login-area">
+    
+      <a class="login-link" href="/login">{{login}}</a>
+      |
+      <a class="login-link" href="/{{signup}}">{{signup}}</a>
+    
+  </div>
+
+  <div id="content">
+  
+  <h2>new page</h2>
+
+    <form method="post" action="{{action}}">
+      <label>
+        <div>wiki</div>
+        <textarea name="content">{{content}}</textarea>
+      </label>
+
+      <div class="error">{{error}}</div>
+
+      <input type="submit">
+    </form>
+
+  </div>
+</body>
+
+</html>

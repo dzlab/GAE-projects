@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <title>Wiki</title>
+</head>
+
+<body>
+  <a href="/wiki" class="main-title">
+    Wiki
+  </a>
+
+  <div class="login-area">
+    
+      <a class="login-link" href="/_edit{{path}}">edit</a>
+      
+      <a class="login-link" href="/login">login</a>
+      |
+      <a class="login-link" href="/signup">signup</a>
+    
+  </div>
+
+  <div id="content">
+  
+
+    <div class="post">
+  <div class="post-heading">
+    <div class="post-title">
+      {{path}}
+    </div>
+
+    <div class="post-date">
+      {{edited}}
+    </div>
+  </div>
+
+  <div class="post-content">
+    {{content}}
+  </div>
+</div>
+    <br><br>
+
+
+
+  </div>
+</body>
+
+</html>

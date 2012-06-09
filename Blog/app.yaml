@@ -1,0 +1,32 @@
+application: my-appli
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /css
+  static_dir: css
+  
+- url: /unit2/signup.*
+  script: unit2_signup.py
+- url: /unit2/welcome.*
+  script: unit2_signup.py
+  
+- url: /unit2/rot13.*
+  script: unit2_rot13.py
+  
+- url: /unit3_css
+  static_dir: unit3/css
+- url: /unit3/.*
+  script: unit3/blog.py
+
+- url: /unit4_css
+  static_dir: unit4/css
+- url: /unit4/.*
+  script: unit4/blog.py
+
+- url: /unit5.*
+  script: unit5/blog.py
+
+- url: /unit6.*
+  script: unit6/blog.py
